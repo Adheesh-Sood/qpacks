@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap')
+;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dongle:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+body {
+    background-color: #18191b;
+}
+.title{
+  color:#2EE59D;
+  font-size:69px;
+  font-family: 'Lily Script One', cursive;
+  border-bottom: 2px solid #fff;
+  width:500px;
+}
+.main{
+  box-shadow: 10px 10px 10px 10px #121214;
+  width:600px;
+  padding-bottom:100px;
+  height: 600px;
+}
+.loginTxt{
+  border-bottom: 2px solid #fff;
+  width: 300px;
+}
+.textLogin{
+  color:#fff;
+  font-size:59px;
+  font-family: 'Dancing Script', cursive;
+}
+input{
+  transition: 1s ease-in-out ;
+  background-color:transparent;
+  color:#ffffff;
+  border:2px solid #2EE59D;
+  border-radius:15px;
+  font-size:38px;
+  padding-left:15px;
+  font-family: 'Dongle', sans-serif;
+}
+#go{
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0px 8px 15px #2EE59D;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+#go:hover{
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px #2EE59D;
+  color: #18191b;
+  transform: translateY(-7px);
+}
+.btnD{
+  display: grid;
+  place-items:center;
+}
+.inputs{
+  place-items:center;
+}
+a{
+  color:#ffffff;
+  font-size:20px;
+  font-family: Chalkduster, serif;
+}
