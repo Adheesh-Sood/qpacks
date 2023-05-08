@@ -27,6 +27,9 @@ document.getElementById('go').addEventListener('click' , ()=>{
     const user = userCredential.user;
     if(user){
       console.log(user.uid)
+      let key = uid[0] + uid[1] + uid[2] + uid[3]
+
+
     }
 
     // ...

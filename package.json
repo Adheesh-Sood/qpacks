@@ -2,6 +2,7 @@
   "name": "Qpacks",
   "version": "1.0.0",
   "dependencies": {
+    "curl": "^0.1.4",
     "firebase": "^9.19.1"
   }
 }

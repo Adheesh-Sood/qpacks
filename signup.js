@@ -36,8 +36,8 @@ console.log(a)
 let data = database;
 console.log(data)
 const provider = new GoogleAuthProvider();
-
-
+const mainSign = document.getElementById('mainSign')
+const btnK = document.getElementById('gotk').style.display = 'none'
 
 document.getElementById('goSignup').addEventListener('click' , ()=>{
     createUserWithEmailAndPassword(auth, document.getElementById('m').value, document.getElementById('password').value)
@@ -45,6 +45,7 @@ document.getElementById('goSignup').addEventListener('click' , ()=>{
             // Signed in
             const user = userCredential.user;
             if(user){
+
                 console.log(user.uid)
                 const k = user.uid[0] + user.uid[1] + user.uid[2] + user.uid[3]
                 console.log(k)
@@ -61,7 +62,15 @@ document.getElementById('goSignup').addEventListener('click' , ()=>{
 
 
                     // ...
-                });
+                });//here my pp is hard - jassim
+                mainSign.style.display = 'none'
+                const btnK = document.getElementById('gotk').style.display = 'grid'
+                btnK.addEventListener('click', function(){
+                    window.location.href='main.html'
+                })
+
+                var tk = document.getElementById('textKey').innerHTML = 'Your key is [' + k  + '] . This key is not meant to be shared and will be used all across the website as well as for you to get your earnings '
+
             }
             // ...
         })
@@ -85,6 +94,11 @@ document.getElementById('google').addEventListener('click' , ()=>{
                 key = uid[0] + uid[1] + uid[3] + uid[4]
                 console.log(key)
                 console.log(uid)
+                mainSign.style.display = 'none'
+                const btnK = document.getElementById('gotk').style.display = 'grid'
+
+                var tk = document.getElementById('textKey').innerHTML = 'Your key is [' + key  + '] . This key is not meant to be shared and will be used all across the website as well as for you to get your earnings '
+
 
 
 
